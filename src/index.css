@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -16,5 +17,33 @@ code {
     monospace;
 }
 .nav{
-  @apply flex justify-between lg:px-4 xl:px-6 2xl:px-8
+  @apply flex lg:justify-between mx-auto lg:max-w-fit relative items-center justify-around pb-2
+}
+.link{
+  @apply lg:flex mx-5 hidden lg:mx-9 xl:mx-16 2xl:mx-20 font-roboto text-black justify-between xl:text-base lg:text-sm text-xs leading-3 mt-5 text-center 
+}
+.show{
+  @apply flex flex-col gap-3  font-roboto text-black   text-sm  top-16 text-left absolute left-1/4
+  
+}
+.wrapperShow{
+  @apply flex flex-col gap-3  font-roboto text-black   text-sm   text-left absolute top-72 left-1/4
+}
+.wrapper{
+  @apply lg:flex hidden justify-between  font-roboto mt-4 text-center 2xl:text-base xl:text-sm text-xs 
+}
+.btn{
+  @apply min-w-fit hover:bg-pink-400 hover:text-purple rounded-full mr-8 px-9 2xl:px-10  2xl:py-4 py-3.5 text-white  leading-3 text-center bg-purple
+}
+.btnShow{
+  @apply min-w-fit hover:scale-110    text-purple   text-center bg-white 
+}
+.login{
+  @apply text-center min-w-fit mt-2.5 hover:scale-110
+}
+.logShow{
+  @apply text-left
+}
+.show a{
+   padding: 0;
 }
