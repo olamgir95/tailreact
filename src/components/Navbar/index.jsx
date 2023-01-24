@@ -48,7 +48,7 @@ function Navbar(props) {
         <li className={showInfo ? "wrapperShow" : "wrapper"}>
           <button className={showInfo ? "btnShow" : "btn"}>Book a demo</button>
         </li>
-        <li className="lg:hover:bg-gray-200 rounded-xl px-1">
+        <li className="lg:hover:bg-gray-200 rounded-xl ">
           <a href="/">Log In</a>
         </li>
       </ul>
