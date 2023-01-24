@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import rectangle from "../../assets/imgs/rectangle.png";
 
 import { FaBars, FaTimes } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
+
 
 function Navbar(props) {
   const [showInfo, setShowInfo] = useState(false);
@@ -39,8 +39,8 @@ function Navbar(props) {
       </div>
       <ul className={showInfo ? "show" : "link"}>
         {Links.map((link) => (
-          <li className="lg:hover:scale-110 " key={link.name}>
-            <a className="xl:px-5 2xl:px-6 px-4 duration-600 hover:text-base min-w-fit " href={link.links}>
+          <li className="lg:hover:bg-gray-200 rounded-xl " key={link.name}>
+            <a className="xl:px-5 2xl:px-6 px-4 duration-600  min-w-fit " href={link.links}>
               {link.name}
             </a>
           </li>
@@ -48,7 +48,7 @@ function Navbar(props) {
         <li className={showInfo ? "wrapperShow" : "wrapper"}>
           <button className={showInfo ? "btnShow" : "btn"}>Book a demo</button>
         </li>
-        <li className="lg:hover:scale-110 ">
+        <li className="lg:hover:bg-gray-200 rounded-xl px-1">
           <a href="/">Log In</a>
         </li>
       </ul>
