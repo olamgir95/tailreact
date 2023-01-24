@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import rectangle from "../../assets/imgs/rectangle.png";
 
 import { FaBars, FaTimes } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
+
 
 function Navbar(props) {
   const [showInfo, setShowInfo] = useState(false);
