@@ -7,7 +7,10 @@ module.exports = {
     extend: {
       colors: {
         purple: "#6F2CFF",
-        pin:"#F6BED9"
+        pin:"#F6BED9",
+        blak: '#1C1C1C',
+        blak2:"#000000",
+        gry:"#F5F5F5"
       },
       fontFamily: {
         roboto: ['"Roboto"', ...defaultTheme.fontFamily.sans],
