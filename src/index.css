@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  /* max-width: 1440px; */
+  
   margin: 0;
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -43,8 +43,12 @@ code {
 .wrapper {
   @apply lg:flex hidden justify-between lg:ml-8 xl:ml-16 2xl:ml-20 font-roboto  text-center 2xl:text-base xl:text-sm text-xs;
 }
-.btn {
+.btnNavbar {
   @apply transition duration-500 ease-in-out min-w-fit hover:bg-white border border-solid hover:border-purple hover:shadow-purple hover:shadow-md hover:text-purple rounded-full lg:mr-6 xl:mr-8 px-9 2xl:px-10  2xl:py-4 py-3.5 text-white  leading-3 text-center bg-purple;
+        
+}
+.btn {
+  @apply md:w-36  w-24   bg-purple h-3/5  md:h-3/4 lg:h-full  md:p-2 p-1 lg:text-base md:text-xs text-[8px] hover:bg-white  hover:text-purple text-white rounded-full  hover:shadow-purple hover:shadow-md transition duration-500 ease-in-out  lg:w-40 font-roboto
 }
 .btnShow {
   @apply text-purple ;

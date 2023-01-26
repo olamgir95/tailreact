@@ -1,19 +1,27 @@
-import React from 'react';
-import Booking from '../Booking';
-import Brands from '../Brands';
-import Carousel from '../Carousell';
-import QubitPage from '../QubitPage';
+import React from "react";
+import BookingFooter from "../BookingFooter";
+import BookingHeader from "../BookingHeader";
+import Brands from "../Brands";
+import Carousel from "../Carousell";
+import EcoSystem from "../EcoSystem";
+import Footer from "../Footer";
+import IndustrySection from "../IndustrySection";
+import QubitSection from "../QubitSection";
 
+function Home() {
+  return (
+    <div className=" max-[1560px]:">
+      <BookingHeader />
+      <Brands />
+      <QubitSection />
+      <Carousel />
+      <IndustrySection />
+      <EcoSystem />
+      <BookingFooter />
+      <Footer />
 
-function Home(props) {
-    return (
-        <div>
-           <Booking/>
-           <Brands/>
-           <QubitPage/>
-           <Carousel/>
-        </div>
-    );
+    </div>
+  );
 }
 
 export default Home;

@@ -48,7 +48,7 @@ function Brands(props) {
             Grow 2.5x faster than <br /> your competitors.
           </h1>
           <div className="flex mt-16 items-center lg:justify-start justify-center text-center">
-            <button className="md:w-32 text-center  w-24  bg-purple h-3/5  md:h-3/4 lg:h-full  md:p-2 p-1 lg:text-base md:text-xs text-[8px] hover:bg-white  hover:text-purple text-white rounded-full  hover:shadow-purple hover:shadow-md transition duration-500 ease-in-out  lg:w-40 font-roboto">
+            <button className="btn text-center">
               Book a demo
             </button>
             <p className=" border-b-2 min-w-fit font-bold border-solid border-b-purple text-blak ml-5 md:text-base text-sm leading-7 font-roboto text-center">

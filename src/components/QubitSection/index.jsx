@@ -8,7 +8,7 @@ import badging from "../../assets/imgs/badging.png";
 import content from "../../assets/imgs/content.png";
 import platform from "../../assets/imgs/platform.png";
 import allthpower from "../../assets/imgs/allthpower.png";
-function QubitPage() {
+function QubitSection() {
   return (
     <div className="font-roboto">
       {/* section1 */}
@@ -65,10 +65,10 @@ function QubitPage() {
           <img className="" src={allthpower} alt="" />
         </div>
         <div className="md:py-16 my-5 ">
-          <button className="md:w-32  w-24 mr-5  bg-purple h-3/5  md:h-3/4 lg:h-full  md:p-2 p-1 lg:text-base md:text-xs text-[8px] hover:bg-white  hover:text-purple text-white rounded-full  hover:shadow-purple hover:shadow-md transition duration-500 ease-in-out  lg:w-40 font-roboto">
+          <button className="btn mr-5">
             See products
           </button>
-          <button className="md:w-32  w-24 bg-white h-3/5  md:h-3/4 lg:h-full  md:p-2 p-1 lg:text-base md:text-xs text-[8px] hover:bg-purple  hover:text-white text-purple rounded-full  hover:shadow-white hover:shadow-md transition duration-500 ease-in-out  lg:w-40 font-roboto">
+          <button className="md:w-36  w-24 bg-white h-3/5  md:h-3/4 lg:h-full  md:p-2 p-1 lg:text-base md:text-xs text-[8px] hover:bg-purple  hover:text-white text-purple rounded-full   hover:shadow-md transition duration-500 ease-in-out  lg:w-40 font-roboto">
             Book a demo
           </button>
         </div>
@@ -78,7 +78,7 @@ function QubitPage() {
         <h1 className="xl:text-4xl lg:3xl md:text-2xl sm:text-xl text-xs font-bold ">
           What you can do with Qubit.
         </h1>
-        <div className="xl:mx-32 lg:mx-20 sm:mx-10 mx-5 items-center text-center grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 lg:gap-8 gap-5 xl:gap-12 md:flex-nowrap flex-wrap">
+        <div className="xl:mx-32 lg:mx-20 sm:mx-10 mx-5 items-center text-center grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 lg:gap-8 gap-5 xl:gap-12 md:flex-nowrap flex-wrap">
           <div className="mt-10 items-center flex flex-col ">
             <img src={recommend} alt="" />
             <p className="font-bold lg:text-lg md:text-base sm:text-sm text-xs mt-4">
@@ -148,4 +148,4 @@ function QubitPage() {
   );
 }
 
-export default QubitPage;
+export default QubitSection;
