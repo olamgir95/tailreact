@@ -6,9 +6,15 @@ import {
   FaInstagram,
   FaGlobe,
 } from "react-icons/fa";
+import { useNavigate } from "react-router";
 import logoFooter from "../../assets/imgs/logoFooter.png";
 import { data } from "./data";
+
+
 function Footer() {
+  const navigate = useNavigate();
+
+
   return (
     <div className="text-center mt-8 font-roboto">
       <p>Connect with us</p>
@@ -54,7 +60,7 @@ function Footer() {
             <FaGlobe />
           </div>
           <div className=" items-center flex flex-col text-center w-full">
-          <div>  <img className="xl:w-22 lg:w-20 md:w-16 w-14" src={logoFooter} alt="" /></div>
+          <div>  <img  onClick={() => navigate("/home")} className="xl:w-22 lg:w-20 md:w-16 w-14" src={logoFooter} alt="" /></div>
             <p className=" lg:text-xs md:text-[10px] mt-4 sm:text-[8px] text-[6px]">© 2021 Qubit. All rights reserved.</p>
           </div>
         </div>

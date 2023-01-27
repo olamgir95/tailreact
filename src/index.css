@@ -74,3 +74,7 @@ code {
  width: max-content;
   
 }
+
+.page{
+  @apply bg-purple text-center lg:text-3xl md:text-xl text-sm text-white h-80 p-8 
+}

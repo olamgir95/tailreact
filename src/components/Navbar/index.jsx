@@ -2,19 +2,13 @@ import React, { useState } from "react";
 import logo from "../../assets/imgs/logo.png";
 
 import { FaBars, FaTimes } from "react-icons/fa";
-
+import { Links } from "./details";
+import { useNavigate } from "react-router";
 
 function Navbar(props) {
   const [showInfo, setShowInfo] = useState(false);
-  let Links = [
-    { name: " Why Qubit?", links: "/" },
-    { name: " Products", links: "/" },
-    { name: " Solutions", links: "/" },
-    { name: " Case studie", links: "/" },
-    { name: " Customers", links: "/" },
-    { name: " Resources", links: "/" },
-    { name: " More", links: "/" },
-  ];
+  const navigate = useNavigate();
+
   return (
     <div
       className={` lg:mx-5  mx-12 lg:text-center lg:items-center lg:justify-between mb-8 lg:flex mt-5 lg:mb-3  ${
@@ -22,7 +16,12 @@ function Navbar(props) {
       }`}
     >
       <div className="mb-3">
-        <img className="xl:w-22 lg:w-20 md:w-16 w-14 mt-3 " src={logo} alt="" />
+        <img
+          onClick={() => navigate("/home")}
+          className="xl:w-22 lg:w-20 md:w-16 w-14 mt-3 "
+          src={logo}
+          alt=""
+        />
       </div>
       <div>
         {showInfo ? (
@@ -49,10 +48,12 @@ function Navbar(props) {
           </li>
         ))}
         <li className={showInfo ? "wrapperShow" : "wrapper"}>
-          <button className={showInfo ? "btnShow" : "btnNavbar"}>Book a demo</button>
+          <button className={showInfo ? "btnShow" : "btnNavbar"}>
+            Book a demo
+          </button>
         </li>
         <li className="lg:hover:bg-gray-200 rounded-xl px-1">
-          <a href="/">Log In</a>
+          <a  href="/Login">Log In</a>
         </li>
       </ul>
     </div>
