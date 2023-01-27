@@ -10,7 +10,7 @@ function Carousell() {
   ];
 
   return (
-    <div className="bg-gry mt-52 mx-auto items-center text-center font-roboto px-28 pb-5 ">
+    <div className="bg-gry md:mt-52 mt-20 mx-auto items-center text-center font-roboto px-28 pb-5 ">
       <h1 className="xl:text-4xl lg:3xl md:text-2xl sm:text-xl text-xs font-bold text-center py-20">
         Trusted by leading brands.
       </h1>

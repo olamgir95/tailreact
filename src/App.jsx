@@ -16,15 +16,15 @@ function App() {
     <>
       <Navbar />
       <Routes>
+        <Route path={`/WhyQubit`} element={<WhyQubit />} />
         <Route path="/home" element={<Home />} />
-        <Route path={`/Why Qubit?`} element={<WhyQubit/>} />
-          <Route path={`/Products`} element={<Products />} />
-          <Route path={`/Customers`} element={<Customers/>} />
-          <Route path={`/Solutions`} element={<Solutions />} />
-          <Route path={`/CaseStudie`} element={<CaseStudies />} />
-          <Route path={`/More`} element={<More />} />
-          <Route path={`/Resources`} element={<Resources />} />
-          <Route path={`/Login`} element={<Login />} />
+        <Route path={`/Products`} element={<Products />} />
+        <Route path={`/Customers`} element={<Customers />} />
+        <Route path={`/Solutions`} element={<Solutions />} />
+        <Route path={`/CaseStudie`} element={<CaseStudies />} />
+        <Route path={`/More`} element={<More />} />
+        <Route path={`/Resources`} element={<Resources />} />
+        <Route path={`/Login`} element={<Login />} />
         <Route path="*" element={<h1>404 NOT FOUND</h1>} />
         <Route path="/" element={<Navigate to={"/home"} />} />
       </Routes>

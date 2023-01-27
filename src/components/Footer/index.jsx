@@ -6,7 +6,7 @@ import {
   FaInstagram,
   FaGlobe,
 } from "react-icons/fa";
-import { useNavigate } from "react-router";
+import { useNavigate, Outlet } from "react-router-dom";
 import logoFooter from "../../assets/imgs/logoFooter.png";
 import { data } from "./data";
 
@@ -16,20 +16,21 @@ function Footer() {
 
 
   return (
+    <>
     <div className="text-center mt-8 font-roboto">
       <p>Connect with us</p>
       <ul className="flex justify-center gap-10 items-center mt-8">
-        <li>
+        <li className="hover:scale-125 ">
           <FaFacebookF />
         </li>
-        <li>
+        <li className="hover:scale-125 ">
           <FaTwitter />
         </li>
 
-        <li>
+        <li className="hover:scale-125 ">
           <FaInstagram />
         </li>
-        <li>
+        <li className="hover:scale-125 ">
           <FaYoutube />
         </li>
       </ul>
@@ -66,6 +67,8 @@ function Footer() {
         </div>
     </div>
     </div>
+    <Outlet/>
+    </>
   );
 }
 

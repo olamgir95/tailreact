@@ -3,13 +3,14 @@ import logo from "../../assets/imgs/logo.png";
 
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Links } from "./details";
-import { useNavigate } from "react-router";
+import { useNavigate, Outlet } from "react-router-dom";
 
 function Navbar(props) {
   const [showInfo, setShowInfo] = useState(false);
   const navigate = useNavigate();
 
   return (
+    <>
     <div
       className={` lg:mx-5  mx-12 lg:text-center lg:items-center lg:justify-between mb-8 lg:flex mt-5 lg:mb-3  ${
         showInfo ? "h-80  duration-500" : ""
@@ -57,6 +58,8 @@ function Navbar(props) {
         </li>
       </ul>
     </div>
+    <Outlet/>
+    </>
   );
 }
 export default Navbar;
