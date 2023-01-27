@@ -60,3 +60,17 @@ code {
 .show a {
   padding: 0;
 }
+.w-fit:nth-child(1) .footerItems{
+  display: grid;
+  width: fit-content;
+  grid-template-columns: repeat(2,1fr);
+ column-gap: 30px;
+  
+}
+.w-fit:nth-child(4) .footerItems{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+ column-gap: 20px;
+ width: max-content;
+  
+}

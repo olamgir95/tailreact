@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import rectangle from "../../assets/imgs/rectangle.png";
+import logo from "../../assets/imgs/logo.png";
 
 import { FaBars, FaTimes } from "react-icons/fa";
 
@@ -22,7 +22,7 @@ function Navbar(props) {
       }`}
     >
       <div className="mb-3">
-        <img className="2xl:w-22 w-20 mt-3 " src={rectangle} alt="" />
+        <img className="xl:w-22 lg:w-20 md:w-16 w-14 mt-3 " src={logo} alt="" />
       </div>
       <div>
         {showInfo ? (

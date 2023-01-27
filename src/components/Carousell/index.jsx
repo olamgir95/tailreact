@@ -15,8 +15,8 @@ function Carousell() {
         Trusted by leading brands.
       </h1>
       <Carousel breakPoints={breakPoints} className="gap-5">
-        {data.map((items) => (
-          <div className="bg-white h-fit lg:w-5/6 md:w-4/5 sm:w-2/3 w-full">
+        {data.map((items,index) => (
+          <div key={index} className="bg-white h-fit lg:w-5/6 md:w-4/5 sm:w-2/3 w-full">
             <img className="w-full" src={items.img} alt="" />
             <p className="text-center font-bold xl:text-xl lg:text-base md:text-sm sm:text-xs text-[10px] text- my-5 ">
               {items.title}

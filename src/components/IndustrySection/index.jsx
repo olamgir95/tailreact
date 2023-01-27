@@ -11,8 +11,8 @@ function IndustrySection() {
         Learn how we are delivering personalization at scale across sectors.
       </p>
       <div className="grid md:grid-cols-2 mt-16 gap-8 grid-cols-1 justify-center">
-        {data.map((items) => (
-          <div className="bg-vio text-white p-8 rounded-lg">
+        {data.map((items, index) => (
+          <div key={index} className="bg-vio text-white p-8 rounded-lg">
             <div className="flex text-center items-center gap-8">
               <div className=" ">
                 <img className="w-4/5" src={items.img} alt="" />
@@ -24,9 +24,9 @@ function IndustrySection() {
             <p className="lg:text-base md:text-xs sm:text-[10px] text-[8px]  mt-8 mb-2 text-left">
               {items.text1}
             </p>
-            <p className="lg:text-base md:text-xs sm:text-[10px] w-fit text-[8px] text-left">
+            <p className="lg:text-base md:text-xs sm:text-[10px] w-fit text-[8px] text-left pb-2 border-solid border-b-2 border-white">
               {items.text2}
-              <hr className="mt-1 h-0.5" />
+              
             </p>
           </div>
         ))}
