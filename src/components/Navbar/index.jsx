@@ -3,7 +3,7 @@ import logo from "../../assets/imgs/logo.png";
 
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Links } from "./details";
-import { useNavigate, Outlet } from "react-router-dom";
+import { useNavigate, Outlet, NavLink } from "react-router-dom";
 
 function Navbar(props) {
   const [showInfo, setShowInfo] = useState(false);
@@ -40,12 +40,12 @@ function Navbar(props) {
       <ul className={showInfo ? "show" : "link"}>
         {Links.map((link) => (
           <li className="lg:hover:bg-gray-200 rounded-xl " key={link.name}>
-            <a
+            <NavLink
               className="xl:px-5 2xl:px-6 px-4 duration-600  min-w-fit "
-              href={link.links}
+              to={link.links} 
             >
               {link.name}
-            </a>
+            </NavLink>
           </li>
         ))}
         <li className={showInfo ? "wrapperShow" : "wrapper"}>
@@ -54,7 +54,7 @@ function Navbar(props) {
           </button>
         </li>
         <li className="lg:hover:bg-gray-200 rounded-xl px-1">
-          <a  href="/Login">Log In</a>
+          <NavLink  to="/login">Log In</NavLink>
         </li>
       </ul>
     </div>

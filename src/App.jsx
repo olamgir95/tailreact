@@ -13,23 +13,23 @@ import WhyQubit from "./pages/WhyQubit";
 
 function App() {
   return (
-    <>
+    <div className=" max-[1560px]:">
       <Navbar />
       <Routes>
-        <Route path={`/WhyQubit`} element={<WhyQubit />} />
+        <Route path={`/whyqubit`} element={<WhyQubit />} />
         <Route path="/home" element={<Home />} />
-        <Route path={`/Products`} element={<Products />} />
-        <Route path={`/Customers`} element={<Customers />} />
-        <Route path={`/Solutions`} element={<Solutions />} />
-        <Route path={`/CaseStudie`} element={<CaseStudies />} />
-        <Route path={`/More`} element={<More />} />
-        <Route path={`/Resources`} element={<Resources />} />
-        <Route path={`/Login`} element={<Login />} />
+        <Route path={`/products`} element={<Products />} />
+        <Route path={`/customers`} element={<Customers />} />
+        <Route path={`/solutions`} element={<Solutions />} />
+        <Route path={`/caseStudie`} element={<CaseStudies />} />
+        <Route path={`/more`} element={<More />} />
+        <Route path={`/resources`} element={<Resources />} />
+        <Route path={`/login`} element={<Login />} />
         <Route path="*" element={<h1>404 NOT FOUND</h1>} />
-        <Route path="/" element={<Navigate to={"/home"} />} />
+        <Route path="/" element={<Navigate to="/home" />} />
       </Routes>
       <Footer />
-    </>
+    </div>
   );
 }
 
