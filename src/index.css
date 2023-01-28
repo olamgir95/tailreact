@@ -27,7 +27,7 @@ code {
   @apply lg:flex   hidden lg:mx-auto xl:ml-16 2xl:ml-20 items-center font-roboto text-black justify-between xl:text-base lg:text-sm text-xs leading-3  text-center;
 }
 .show {
-  @apply flex flex-col gap-3  font-roboto text-black text-left text-base transition-all ease-in duration-500   absolute;
+  @apply lg:hidden flex flex-col gap-3  font-roboto text-black text-left text-base transition-all ease-in duration-500   absolute;
 }
 .show  li a:hover,
 .wrapperShow button:hover {

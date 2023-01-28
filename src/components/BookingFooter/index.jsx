@@ -10,7 +10,7 @@ function BookingFooter(props) {
         </h1>
   <div className="h-10 flex mt-8 tex-center">
           <input
-            className="lg:w-72 md:w-60 sm:w-36 w-24 !pl-6 lg:text-base md:text-xs text-[8px] text-sm  h-3/5 md:h-3/4 lg:h-full  md:p-2 p-1 border border-solid rounded-l-full outline-none placeholder:text-xs md:placeholder:text-sm lg:placeholder:text-base border-purple placeholder:text-grey-500 placeholder:opacity-80"
+            className="lg:w-72 md:w-60 sm:w-36 w-24 !pl-2 md:!pl-3 lg:!pl-5 xl:!pl-6 lg:text-base md:text-xs text-[6px]  h-3/5 md:h-3/4 lg:h-full  md:p-2 p-1 border border-solid rounded-l-full outline-none placeholder:text-[8px] md:placeholder:text-xs lg:placeholder:text-base border-purple placeholder:text-grey-500 placeholder:opacity-80"
             type="text"
             placeholder="Enter your email"
           />

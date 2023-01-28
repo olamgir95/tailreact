@@ -19,9 +19,9 @@ function BookingHeader(props) {
           next generation of product recommendations, badging and insights to
           build exceptional customer experiences.
         </p>
-        <div className="h-10 flex mt-2 ">
+        <div className="h-10 flex mt-2 text-center">
           <input
-            className="lg:w-60 md:w-52 w-28 lg:text-base md:text-xs text-[8px] text-sm  h-3/5 md:h-3/4 lg:h-full !pl-5 md:p-2 p-1 border border-solid rounded-l-full outline-none placeholder:text-xs md:placeholder:text-sm lg:placeholder:text-base border-purple placeholder:text-grey-500 placeholder:opacity-80"
+            className="lg:w-60 md:w-52 w-28 lg:text-base  md:text-xs text-[8px] h-3/5  md:h-3/4 lg:h-full !pl-2 md:!pl-3 lg:!pl-5 xl:!pl-6 md:p-2 p-1 border border-solid rounded-l-full outline-none placeholder:text-[8px] md:placeholder:text-xs  placeholder:align-middle lg:placeholder:text-base border-purple placeholder:text-grey-500 placeholder:opacity-80"
             type="text"
             placeholder="Enter your email"
           />
