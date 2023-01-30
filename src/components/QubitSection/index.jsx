@@ -84,7 +84,7 @@ function QubitSection() {
             <p className="font-bold lg:text-lg md:text-base sm:text-sm text-xs mt-4">
               More insight
             </p>
-            <p className=" mx-auto font-normal  md:text-xs text-[8px] w-60 xl:w-72 mt-4">
+            <p className="qubitTeks">
               Learn which products drive performance and which don't, through
               automated insights you can action.
             </p>
@@ -94,7 +94,7 @@ function QubitSection() {
             <p className="font-bold lg:text-lg md:text-base sm:text-sm text-xs mt-4">
               More insight
             </p>
-            <p className=" font-normal  md:text-xs text-[8px] w-60 xl:w-72 mt-4">
+            <p className="qubitTeks">
               Learn which products drive performance and which don't, through
               automated insights you can action.
             </p>
@@ -104,7 +104,7 @@ function QubitSection() {
             <p className="font-bold lg:text-lg md:text-base sm:text-sm text-xs mt-4">
               More insight
             </p>
-            <p className=" font-normal  md:text-xs text-[8px] w-60 xl:w-72 mt-4">
+            <p className="qubitTeks">
               Learn which products drive performance and which don't, through
               automated insights you can action.
             </p>
@@ -115,7 +115,7 @@ function QubitSection() {
               {" "}
               Product insights
             </p>
-            <p className=" font-normal  md:text-xs text-[8px] w-60 xl:w-72 mt-4">
+            <p className="qubitTeks">
               A platform packed with insights helping you discover the hard
               hitting things you can do next.
             </p>
@@ -126,7 +126,7 @@ function QubitSection() {
               {" "}
               Product insights
             </p>
-            <p className=" font-normal  md:text-xs text-[8px] w-60 xl:w-72 mt-4">
+            <p className="qubitTeks">
               A platform packed with insights helping you discover the hard
               hitting things you can do next.
             </p>
@@ -137,7 +137,7 @@ function QubitSection() {
               {" "}
               Product insights
             </p>
-            <p className=" font-normal  md:text-xs text-[8px] w-60 xl:w-72 mt-4">
+            <p className="qubitTeks">
               A platform packed with insights helping you discover the hard
               hitting things you can do next.
             </p>

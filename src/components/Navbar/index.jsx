@@ -22,8 +22,7 @@ function Navbar(props) {
       window.removeEventListener("resize", handleWindowResize);
     };
   }, []);
-  console.log((showInfo && windowWidth < 1024) ? "show" : "link");
-  console.log('windowWidth: ',windowWidth);
+ 
   return (
     <>
       <div
